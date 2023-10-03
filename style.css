@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.top{
+    width: auto;
+    line-height: 30px;
+    padding: 5px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    min-width: 1200px;
+}
+.top img{
+    width: 30px;
+    height: 30px;
+    margin-right: 3px;
+}
+.top p{
+    color: red;
+    margin-right: 5px;
+}
+.top button{
+    width: 100px;
+    height: 30px;
+    /* Bo tròn góc phải của nút đăng ký */
+    border-radius: 3px;
+    border: none;
+    background-color: blue;
+    color: white;
+}
+.header1 img{
+  width: 151;
+  height: 40px;
+}
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contener{
+  min-width: 1200px;
+  margin: 0 160px;
+  padding-top: 8px ;
+  padding-bottom: 8px;
+}
+nav ul li, strong{
+  color: white;
+  font-size: 14px;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+nav{
+  background-color: #cd1818;
+  height: 56px;
+  box-sizing: border-box;
+}
+.search-container{
+  display: flex;
+  align-items: center;
+  width: 510px;
+  height: 38px;
+  margin-right: 50px;
+}
+.search-input{
+  padding-left: 15px;
+  height: 38px;
+  width: 440px;
+  margin-left: 20px;
+  box-sizing: border-box;
+}
+.search-button{
+  height: 41px;
+  width: 58px;
+  background-color: #e7e7e7;
+}
+.search-button svg{
+  height: 22px;
+  width: 22px;
+}
+svg{
+  width: 24px;
+  height: 24px;
+}
+section{
+  /*dung neo drop menu*/
+  position: relative;
+  background-color: #252525;
+  min-height: 36px;
+  min-width: 1200px;
+  box-sizing: border-box;
+}
+section ul{
+  display: flex;
+  justify-content: space-between;  
+}
+section ul a{
+  color: white;
+  font-size: 14px;
+}
+section ul a i{
+  padding-right: 6px;
+}
+.contener2{
+  margin: 0 160px;
+}
+.Menu-bar-conten>ul> li> a:hover{
+ color: rgb(119, 119, 119);
+}
+/*drop menu*/
+.Menu-bar-conten >ul> li{
+
+  width: auto;
+  height: 36px;
+  padding: 8px 0;
+  box-sizing: border-box;
+}
+.drop-menu{
+  position: absolute;
+  background-color:#cfcfcf;
+  min-width:1200px;
+  height: auto; 
+  padding: 10px;
+  margin: 0 160px;
+  left: 0;
+  top: 100%;
+  display: none;
+}
+.Menu-bar-conten >ul>li:hover .drop-menu{
+  display: block;
+}
+.block1 ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.drop-menu >div{
+  display: flex;
+}
+.drop-menu ul div {
+  grid-column: span 3;
+}
+.drop-menu ul li{
+  padding: 5px 0;
+}
+.drop-menu ul li:hover a{
+  color: black;
+}
+.Block{
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.block1{
+  width: auto;
+  height: auto;
+}
+.block2{
+  width: auto;
+  height: auto;
+  border: 1;
+}
+.block2 ul{
+  display: flex;
+  flex-direction: column;
+}
+.block3{
+  width: auto;
+  height: auto;
+}
+.block3>ul{
+  display: flex;
+  flex-direction: column;
+}
+.block3>ul>li>a>p{
+  color: red;
+}
+.block3>ul>li>a>strong{
+  color: black;
+  display: flex;
+}
+.block4>ul>img{
+  width: 100%;
+  height: auto;
+}
+.Block-pk{
+  display: flex;
+
+}
+.Menu-bar-conten2{
+  position: relative;
+}
+.block-menu{
+  position: absolute;
+  background-color:#cfcfcf;
+  width: 198px;
+  height: auto; 
+  padding: 10px;
+  display: none; 
+  left: 0;
+  top: 100%;
+}
+.block-menu>ul{
+  display: flex;
+  flex-direction: column;
+}
+.Menu-bar-conten>ul>li:hover .block-menu{
+  display: block;
+}
+/*conten*/
+/*footer*/
+.footer-menu{
+  width: 100%;
+  height: auto;
+  min-width: 1200px;
+}
+.footer{
+ display: flex;
+ justify-content: space-between;
+ flex-grow: 1;
+ margin: 0 160px;
+ padding-top:25px ;
+ padding-bottom: 15px;
+}
+.block{
+ display: flex;
+ flex-direction: column;
+}
+.block>ul>li{
+  padding:0 5px 10px 5px;
+}
+.Logo{
+  display: flex;
+  width: 51px;
+  height: 38px;
+}
+.block>ul>li:hover a{
+  color: rgb(81, 81, 236);
+}
+.block>ul>strong{
+  color: black;
+}
+.Logo2>img{
+  width: 56px;
+  height: 32px;
+}
+.tell>li>a{
+  font-size: 20px;
+  color: #cd1818;
+}
+.tell>li>a>span{
+  color: black;
+}
+.Logo-nhacai{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+}
+.Logo-nhacai>img{
+  width: 46px;
+  height: 29px;
+}
+.About{
+  display: flex;
+}
+.About>a>p{
+  font-size: 24px;
+  align-items: center;
+}
+.About>a>img{
+  width: 24px;
+  height: 24px;
+  margin-left: 12px;
+}
+.Lh>h2{
+  font-size: 16px;
+  line-height: 41px;
+}
+.Lh>p{
+  font-size: 14px;
+  line-height: 22px;
+  padding-top: 0;
+}
+.Lh>ul{
+  padding-bottom: 17px;
+}
+.img0{
+  display: flex;
+  width: 148px;
+  height: 25px;
+}
+.img1{
+  width: 120px;
+  height: 25px;
+  display: flex;
+}
+.conten{
+  height: 500px;
+  width: 100%;
+}
+.img2{
+  display: flex;
+  width: 127px;
+  height: 28px;
+}
+.footer-menu>.QC{
+  background-color: #cfcfcf;
+  display: flex;
+  border: 2;
+}
+.footer-menu>.QC>.title{
+  margin: 0 195px;
+}
+.footer-menu>.QC>.title p{
+  text-align: center;
+}
+.footer-menu>.QC>.title a{
+  color:rgb(65, 65, 216);
+}
