@@ -1,0 +1,454 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.contener-all{
+    background-color:#cd1818;
+    padding:0 160px;
+    min-width: 100vh;
+}
+.Logo-top{
+  padding:16px 0;
+  min-width: 1176px;
+  height:208px;
+  align-items: center;
+}
+.Logo-top>img{
+    width: 100%;
+    height: auto;
+}
+li{
+    list-style-type: none;
+}
+/* slide*/
+.slider{
+ padding-top: 11px;
+ padding: 5px;
+ height: auto;
+ min-width: 1200px;
+ background-color: #ffffff;
+ margin-top: 20px;
+ border-radius: 10px;
+}
+.slider-content{
+    min-width: 1200px;
+    height: 360px;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.slider-content-top{
+    width: 800px;
+    height: 300px;
+    box-sizing: border-box;
+}
+.slider-content-left>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.slider-content-left-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;      
+}
+.slider-content-right{
+    width: auto;
+    height: auto;
+}
+.slider-content-right>.right-km>.capten>h3{
+    line-height: 1;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(142, 142, 142);
+}
+.slider-content-right>.slider-content-right-item{
+    margin-left: 5px;
+    width:380px; 
+    min-height: 100px;
+    padding-bottom: 5px;
+}
+.right-km{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 5px;
+}
+.right-km a{
+    text-decoration: none;
+    color: black;
+}
+.slider-content-right-km{
+ padding: 5px;
+ box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+/*-----------------Danh muc sp-------------------------*/
+.danh-Muc-sp{
+    margin-top: 20px;
+    background-color: white;
+    min-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(6, 2fr);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.danh-Muc-sp .main-dm-sp{
+    height: 149px;
+    width: auto;
+    padding: 15px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    }
+    .Item-sp{
+        width: 95px;
+        height: 95px;
+        border-radius: 50%;
+        margin-top: -20px;
+        background-color: #f4f4f4;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+    .hang{
+        font-weight: 400;
+        line-height: 1.3;
+        color: black;
+        margin-top: 115px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+    }
+/*-------------paner1----------*/
+.paner1{
+    height: 100px;
+    min-width: 1200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+/*---------------deal hot---------------*/
+.deal-hot{
+    min-width: 1200px;
+    height: 542px;
+    background-color: white;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.deal-hot-title{
+    min-width: 1170px;
+    margin: 0 15px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.deal-hot-title i{
+ height: 100%;
+  width: 21px;
+  color: #cd1818;
+  line-height: 40px;
+}
+.deal-hot-title h2{
+    color: #cd1818;
+}
+
+.box-conten{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.box-sp{
+    padding: 12px;
+    max-width: 296px;
+    height: 439px;
+    position: relative;
+}
+.box-img{
+  width: 272px;
+  height: 214px;
+  box-sizing: border-box;
+  padding: 41px 53px 0 53px;
+  position: relative;
+  border: 3px solid#cd1818;
+  border-radius: 9px;
+}
+.box-img img{
+    position: absolute;
+    width: 168px;
+    height: 168px;
+}
+.box-discout{
+    position: absolute;
+    margin-top: -70px;
+}
+.box-discout span{
+    height: 24px;
+    padding: 2px 10px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+.box-discout >.discout1{
+    background-color: goldenrod;
+}
+.box-discout >.discout2{
+    background-color: #cd1818;
+    margin-top: 5px;
+}
+.name-sp h3{
+    font-size: 17px;
+    display: inline-flex;
+}
+.name-sp h3 a{
+    text-decoration: none;
+    color: black;
+}
+.name-sp h3 a:hover{
+    color: blue;
+}
+.box-total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.total-left{
+    width: 130px;
+    height: 28px;
+    font-size: 18px;
+    font-weight: 500;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    background-color: #a92008;
+    border-radius: 15px;
+}
+/*------------------bo----------------*/
+.box-total> .total-lef> .total-left-color{
+    position: absolute;
+    border-radius: 15px 0 0 15px;
+    height: 28px;
+    width: 87%;
+    background-color: #cd1818;
+}/*--------------------------------*/
+.total-right>p{
+   font-size: 12px;
+   line-height: 16px;
+   color: #a7a7b1;
+   align-items: center;
+   margin-bottom: 0;
+}
+.total1{
+    text-decoration:line-through;
+}
+.box-supot{
+    padding: 10px 10px 0 10px;
+    margin-bottom: 10px;
+    background-color: #e8e7e7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    min-height: 104px;
+}
+/*-----------drop button---------------*/
+.drop-button{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 296px;
+    height: 38px;
+    padding: 10px;
+    left: 0;
+    top: 100%;
+    display: none;
+    box-sizing: border-box;
+}
+.drop-button-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.drop-button-left1>button{
+    width: 158px;
+    height: 33px;
+    background-color: #cd1818;
+    color: white;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+.drop-button-left2>button{
+    width: 87px;
+    height: 33px;
+    background-color: #989797;
+    color: white;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+.box-sp:hover .drop-button{
+    display: block;
+}
+.brand{
+    display: flex;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+.brand>img{
+    display: block;
+    max-width:230px;
+    max-height:95px;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+}
+p{
+    color: #a7a7b1;
+    font-size: 13px;
+}
+/*--------------Iphone new-------*/
+.Iphone-new{
+    height: 668px;
+    min-width: 1200px;
+    background-color:black;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    position: relative; 
+}
+.Iphone-new-item{
+  position: absolute;
+  height: 336px;
+  padding: 0 70px;
+  display: flex;
+  justify-content: space-between;
+  min-width: 1200px;
+}
+.Iphone-new-item-sp{
+    min-width: 250px;
+    height: 336px;
+}
+.Iphone-new-item-sp img{
+    width: 100%;
+    height: 100%;
+}
+/*----------------bug----------------------*/
+.Iphone-new-button{
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fd0000;
+    position: absolute;
+}
+.Iphone-new-button>.button-img{
+    width: 533px;
+    height: 52px;
+    position: absolute;
+    padding-left: 27%;
+}
+.button-img img{
+    width: auto;
+    height: 100%;
+    position: absolute;
+  
+}
+/*--------------------- deal ngon-----------------*/
+.deal-ngon{
+    height: 512px;
+    min-width: 1200px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 20px 16px;
+    box-sizing: border-box;
+}
+.title-deal>h2{
+ font-size: 20px;
+ line-height: 20px;
+ color: black;
+ font-weight: 500;
+ margin-bottom: 16px;
+}
+.paner-deal{
+    margin-bottom: 16px;
+}
+.deal-ngon-item{
+  display: flex;
+  justify-content: space-between;
+}
+/*----------------------paner2-----------------------*/
+.paner2{
+    min-width: 1200px;
+    background-color: white;
+    margin-bottom: 20px;
+    height: 200px;
+    border-radius: 10px;
+}
+/*----------------dien thoai noi----------*/
+.dien-thoai-noi{
+    min-width: 1200px;
+    height: 1042px;
+    background-color:white;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    padding: 15px;
+}
+.title-deal-DTH{
+    line-height: 24px;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 15px 0;
+}
+.title-deal-sp{
+    width: 1200px;
+    height: auto;
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}  
+/*-----------lap top----------------*/
+.lapTop-hot{
+    min-width: 1200px;
+    height: 1194px;
+    background-color:white;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+/*tableat-------------------------*/
+.tab-late-hot{
+    height: 572px;
+    min-width: 1200px;
+    background-color: white;
+    margin-bottom: 24px;
+    border-radius: 10px;
+}
+/*------------gia dung-----------*/
+.Gia-dung{
+    height: 689px;
+    min-width: 1200px;
+    background-color: white;
+    margin-bottom: 24px;
+    border-radius: 10px;
+}
