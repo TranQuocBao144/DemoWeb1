@@ -26,8 +26,8 @@ li{
 }
 /* slide*/
 .slider{
- padding-top: 11px;
- padding: 5px;
+ padding-top: 5px;
+ padding-left: 5px;
  height: auto;
  min-width: 1200px;
  background-color: #ffffff;
@@ -37,10 +37,8 @@ li{
 .slider-content{
     min-width: 1200px;
     height: 360px;
-    padding: 5px;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
 }
 .slider-content-top{
     width: 800px;
@@ -52,15 +50,67 @@ li{
     height: 100%;
     border-radius: 5px;
 }
+/*--------------slider-----------------*/
+.myDiv{
+    min-width: 800px;
+    min-height: 300px;
+    position: relative;
+}
+.myDiv img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.myDiv button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    /* Thêm các thuộc tính để tạo nút hình tròn */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(191, 191, 191, 0.5);
+  }
+  
+  #prev {
+    left: 10px; /* Đặt nút "Prev" vào trong khối div */
+  }
+  
+  #next {
+    right: 10px; /* Đặt nút "Next" vào trong khối div */
+  }
+/*--------------------------------*/
 .slider-content-left-bottom{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 56px;      
 }
+.name-td{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tieu-de:hover .name-td{
+    border-bottom: 2px solid #b81e25;
+}
+.tieu-de{
+    min-width: 20%;
+    min-height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 .slider-content-right{
-    width: auto;
-    height: auto;
+    width: 385px;
+    height: 360px;
+    margin-left: 5px;
 }
 .slider-content-right>.right-km>.capten>h3{
     line-height: 1;
@@ -68,25 +118,34 @@ li{
     font-weight: 700;
     color: rgb(142, 142, 142);
 }
-.slider-content-right>.slider-content-right-item{
-    margin-left: 5px;
-    width:380px; 
-    min-height: 100px;
-    padding-bottom: 5px;
+.slider-content-right-item{
+    max-width:380px; 
+    max-height: 100px;
+    margin-bottom: 5px;
+}
+.slider-content-right-item img{
+    width: 100%;
+    height: auto;
 }
 .right-km{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 5px;
+    padding-left: 5px;
+    height: 149px;
+    box-sizing: border-box;
 }
 .right-km a{
     text-decoration: none;
     color: black;
 }
 .slider-content-right-km{
- padding: 5px;
- box-sizing: border-box;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+.slider-content-right-km strong{
+    font-size: 15px;
 }
 a{
     text-decoration: none;
@@ -110,7 +169,11 @@ a{
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    transition: box-shadow 0.3s ease-in-out;
     }
+    .main-dm-sp:hover {
+        box-shadow: 3px 3px 3px 3px grey;
+      }
     .Item-sp{
         width: 95px;
         height: 95px;
@@ -177,9 +240,18 @@ a{
 .box-sp{
     padding: 12px;
     max-width: 296px;
-    height: 439px;
+    max-height: 573px;
+    min-height: 475px;
+    box-sizing: border-box;
     position: relative;
+    transition: transform 0.5s;
 }
+.box-top{
+    transition: transform 0.5s;
+}
+.box-top:hover.box-top {
+    transform: translateY(-10px);
+  }
 .box-img{
   width: 272px;
   height: 214px;
@@ -260,15 +332,46 @@ a{
 }
 .box-supot{
     padding: 10px 10px 0 10px;
-    margin-bottom: 10px;
     background-color: #e8e7e7;
     box-sizing: border-box;
     border-radius: 5px;
     min-height: 104px;
 }
+.THong-so{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.THong-so>span{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 19px;
+    color: #6c757d;
+    margin-bottom: 9px;
+    position: relative;
+    cursor: help
+}
+.THong-so-dt{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.THong-so-dt>span{
+    display:flex;
+    font-size: 14px;
+    line-height: 19px;
+    color: #6c757d;
+    margin-bottom: 9px;
+    position: relative;
+    margin-right: 5px;
+    cursor: help
+}
+.THong-so-dt>span i{
+    font-size: 14px;
+    margin-right: 5px;
+}
 /*-----------drop button---------------*/
 .drop-button{
     position: absolute;
+    z-index: 1;
     background-color: rgb(255, 255, 255);
     min-width: 296px;
     height: 38px;
@@ -285,7 +388,7 @@ a{
 .drop-button-left1>button{
     width: 158px;
     height: 33px;
-    background-color: #cd1818;
+    background-color: #b30606;
     color: white;
     margin-right: 10px;
     font-size: 16px;
@@ -320,9 +423,11 @@ a{
     height: auto;
     border-radius: 50%;
 }
-p{
+.title-supot> p{
     color: #a7a7b1;
     font-size: 13px;
+    margin: 0;
+    margin-bottom: 0;
 }
 /*--------------Iphone new-------*/
 .Iphone-new{
@@ -333,10 +438,9 @@ p{
     border-radius: 10px;
     display: flex;
     align-items: center;
-    position: relative; 
+    position: relative;
 }
 .Iphone-new-item{
-  position: absolute;
   height: 336px;
   padding: 0 70px;
   display: flex;
@@ -351,7 +455,6 @@ p{
     width: 100%;
     height: 100%;
 }
-/*----------------bug----------------------*/
 .Iphone-new-button{
     height: 52px;
     display: flex;
@@ -359,6 +462,8 @@ p{
     justify-content: center;
     background-color: #fd0000;
     position: absolute;
+    margin-left: 333px;
+    margin-top: 454px;
 }
 .Iphone-new-button>.button-img{
     width: 533px;
@@ -411,13 +516,21 @@ p{
     background-color:white;
     margin-bottom: 24px;
     border-radius: 10px;
-    padding: 15px;
 }
-.title-deal-DTH{
+.title-deal-DTH>h2{
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 15px;
+    text-transform: inherit;
+    margin-bottom: 0;
     line-height: 24px;
-    font-size: inherit;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    /* font-size: inherit;
     font-weight: inherit;
-    margin: 15px 0;
+    text-transform: inherit;
+    margin-bottom: 0;
+    line-height: normal; */
 }
 .title-deal-sp{
     width: 1200px;
@@ -429,13 +542,12 @@ p{
 /*-----------lap top----------------*/
 .lapTop-hot{
     min-width: 1200px;
-    height: 1194px;
+    height: 1200px;
     background-color:white;
     margin-bottom: 24px;
     border-radius: 10px;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
 }
+
 /*tableat-------------------------*/
 .tab-late-hot{
     height: 572px;
@@ -448,7 +560,99 @@ p{
 .Gia-dung{
     height: 689px;
     min-width: 1200px;
-    background-color: white;
     margin-bottom: 24px;
+    background-color: white;
     border-radius: 10px;
+    padding: 15px 0;
 }
+.item-all-desig{
+    margin-bottom: 15px;
+    margin-left: 15px;
+    height: 74px;
+}
+.item-all-conten{
+    height: auto;
+    width: auto;
+}
+.item-all-box{
+    display: flex;
+}
+.item-box-n:hover .item-box-t{
+    background-color: #fff6f5;
+}
+.item-box-n{
+    width: 142px;
+    height: 72px;
+    margin-right: 18px;
+    border: 2px solid #a7a7b1;
+    border-radius: 4px;
+    position: relative;
+}
+.item-box-t{
+    height: auto;
+    width: auto;
+    padding: 9px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.item-img{
+    width: 32px;
+    height: 32px;
+    margin-bottom: 8px;
+}
+.item-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    color: #b81e25;
+}
+.item-all-sp-flex{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+/*-------------------------discout---------*/
+.discout-contener{
+    min-width: 1200px;
+    min-height: 247px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+.discount-slider{
+    display: flex;
+    width:100% ;
+    height: 175px;
+    justify-content: space-between;
+    position: relative;
+}
+.discount-slider img{
+    width: 374px;
+    height: 175px;
+}
+.discout-onl{
+    margin-bottom: 24px;
+}
+.discount-slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    /* Thêm các thuộc tính để tạo nút hình tròn */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(191, 191, 191, 0.5);
+  }
+  
+  #prev-discount {
+    left: 10px; /* Đặt nút "Prev" vào trong khối div */
+  }
+  
+  #next-discount {
+    right: 10px; /* Đặt nút "Next" vào trong khối div */
+  }

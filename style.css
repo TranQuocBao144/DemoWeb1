@@ -3,6 +3,24 @@
     padding: 0;
     font-family:Arial, Helvetica, sans-serif;
 }
+.item_icon {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.text-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(248, 249, 250);
+}
+.svg {
+  display: block;
+}
+.cart-empty_txt-center {
+  text-align: center;
+}
 .top{
     width: auto;
     line-height: 30px;
@@ -300,7 +318,7 @@ section ul a i{
   display: flex;
 }
 .conten{
-  height: 500px;
+  height: 100%;
   width: 100%;
 }
 .img2{
